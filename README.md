@@ -1,7 +1,7 @@
-# Laboratorio 2 - Python
+# Laboratorio 1 - Python
 
 ## 📌 Descripción  
-Este laboratorio tiene como objetivo que los estudiantes fortalezcan sus conocimientos relacionados con **Python** y la programación funcional.
+Este laboratorio tiene como objetivo que los estudiantes fortalezcan sus conocimientos relacionados con **Python** y la programación imperativa.
 
 ---
 
@@ -12,21 +12,21 @@ Este laboratorio tiene como objetivo que los estudiantes fortalezcan sus conocim
    - No realice cambios directamente sobre el repositorio original.  
 
 2. **Estructura de carpetas**  
-   - Dentro de su fork, cree una carpeta llamada **`lab02/`**.  
+   - Dentro de su fork, cree una carpeta llamada **`lab01/`**.  
    - Cada ejercicio debe resolverse en un archivo **independiente** con el siguiente formato:  
      ```
-     lab02/ejercicio01.ipynb
-     lab02/ejercicio02.ipynb
+     lab01/ejercicio01.ipynb
+     lab01/ejercicio02.ipynb
      ...
      ```  
 
 3. **Resolución de ejercicios**  
-   - Desarrolle los programas en Google Colab.  
+   - Desarrolle los programas en el entorno de programacion [Google colab](https://colab.research.google.com/)
    - Una vez finalizados, copie el código a los archivos `.ipynb` correspondientes en su repositorio.  
    - Cada archivo debe contener:
      - La implementación de su solución.  
 
-4. **Buenas prácticas**  
+5. **Buenas prácticas**  
    - Use **nombres de predicados claros y significativos**.
 ---
 
@@ -39,7 +39,7 @@ Este laboratorio tiene como objetivo que los estudiantes fortalezcan sus conocim
 ## ✅ Criterios de Evaluación  
 
 1. **Correctitud de las soluciones** (funcionalidad de los predicados).  
-2. **Cumplimiento de la estructura solicitada** (archivos independientes en `lab02/`).  
+2. **Cumplimiento de la estructura solicitada** (archivos independientes en `lab01/`).  
 3. **Claridad en la codificación** (nombres, comentarios y legibilidad).  
 4. **Uso adecuado de variables** (incluyendo variables anónimas donde corresponda).  
 
@@ -52,178 +52,275 @@ Este laboratorio tiene como objetivo que los estudiantes fortalezcan sus conocim
 
 ---
 
-## Ejercicio 1 - Funciones lambdas
+## Ejercicio 1 - Datos — Simples y Estructurados
 
-1. Definir las siguientes funciones usando lambdas.
+1. **Teniendo como base el siguiente codigo**
+```
+# Estado inicial
+saldo = 500_000      # Saldo de la cuenta
+deposito = 150_000   # Monto a depositar
+retiro = 80_000      # Monto a retirar
 
-```  
-a. Crear una lambda que reciba un número y devuelva True si es múltiplo de 3, False en caso contrario.
-b. Crear una lambda que reciba un número y devuelva su cubo.
-c. Crear una lambda que reciba dos números y devuelva su producto.
-d. Crear una lambda que reciba dos números y devuelva el mayor.
-e. Crear una lambda que reciba una palabra y devuelva True si empieza con la letra “A" (o “a”).
-f. Crear una lambda que reciba una temperatura en Celsius y la convierta a Fahrenheit.
+# Actualización del estado
+saldo = saldo + deposito   # Se deposita dinero
+saldo = saldo - retiro     # Se retira dinero
+
+# Salida del estado final
+print("Saldo final de la cuenta:", saldo)
 ```
 
-2. Realizar el siguiente ejercicio usando lambdas
+* Declara nuevas variables:
+  - interes = 0.02 (2% mensual)
+  - saldo_final como el saldo actualizado con el interés aplicado.
 
-    Crear una lista que contenga tres lambdas:
-    * Una que duplique un número
-    * Una que le sume 10
-    * Una que calcule su cuadrado
+* Muestra el resultado usando un f-string, por ejemplo:
+  - print(f"Saldo final con interés: ${saldo_final:.2f}")
 
-    Luego, pedir un número al usuario y aplicar cada lambda a ese número, mostrando los resultados.
-    
-    ```
-    Ingrese un número: 5
-    10
-    15
-    25
-    ```
+* Modifica el código para que el usuario pueda ingresar los valores por teclado usando input() y convierte las entradas a float.
 
----
-
-## Ejercicio 2 - listas de compresión
-
-1. Realizar los siguientes ejercicios usando listas de compresión.
-
-```  
-a. Generar una lista con tuplas (n, n^2) para una lista de numeros.
-b. Generar una lista con cubos de los números mayores a 10.
-c. Generar una lista con solo los numeros pares.
-d. Dada la lista numeros, producir:
-
-    ["valor: 10", "valor: 15", ...]
-e. Generar una lista con la conversion correspondiente a grados Fahrenheit.
-f. Generar una lista filtrando las palabras de mas de 5 letras.
-g. Generar una lista con solo las iniciales de las palabras.
-h. Generar una lista indicando "par" o "impar" dada una lista de numeros.
-i. Dada una lista de listas (matriz), aplanala.
-
-    [[1,2,3], [4,5,6], [7,8,9]] = [1,2,3,4,5,6,7,8,9]
-```
+* ¿Qué representa el estado inicial y el estado final del programa?
+  - Explica cómo cada instrucción afecta la memoria.
 
 
----
-
-## Ejercicio 3 - Map
-
-1. Realizar los siguientes ejercicios usando map.
+2. **Teniendo como base el siguiente codigo**
 
 ```
-a. Dada una lista de temperaturas en Celsius, convertirlas a Fahrenheit.
-b. Dadas dos listas con la misma cantidad de elementos, generar una nueva sumando cada elementos (primer elemento de lista 1 + primer elemento lista 2).
-c. Dada una lista de radios de circulos, generar la lista de sus areas.
-d. Dada un diccionario, generar una lista de tuplas (nombre, valor+10%)
+# Lista inicial de temperaturas en °C
+temperaturas = [22.5, 23.0, 21.8, 24.3, 25.1]
 
-  {"pan": 1000, "leche": 2500, "café": 5000}
-
-e. Dada una matriz, multiplicar todos los elementos por 10.
+# Operaciones básicas
+print("Temperaturas:", temperaturas)
 ```
 
-----
+* Agrega una nueva temperatura al final de la lista.
+* Elimina la primera temperatura registrada.
+* Inserta una temperatura en la segunda posición.
+* Muestra la lista ordenada de menor a mayor.
+* Calcula la diferencia entre la temperatura más alta y la más baja, y calcula el promedio de todas las temperaturas.
+* Encuentra el índice (posición) de la temperatura 23.7.
+* Muestra las temperaturas de la 2da posicion a la 4ta posicion
+* Muestra las tres primeras temperaturas.
 
 
-## Ejercicio 4 - Filter
-
-1. Realizar los siguientes ejercicios usando filter.
+3. **Teniendo como base el siguiente codigo**
 
 ```
-a. Dada una lista de palabras, filtrar solo aquellas con mas de 4 letras.
-b. Dada una lista filtrar los elementos que son nulos (None).
-c. Dada una lista de palabras, filtrar aquellas que empiezan pro una vocal.
-d. Dada una lista de palabras, filtrar aquellas que son palindromos.
-e. Dada una lista de numeros, filtrar los que terminan en 5.
-f. Dada una lista de diccionarios, filtrar los productos con precio mayor a 100.
-
-  productos = [
-    {"nombre": "Teclado", "precio": 80},
-    {"nombre": "Mouse", "precio": 40},
-    {"nombre": "Monitor", "precio": 300},
-    {"nombre": "Webcam", "precio": 150}
+# Lista de productos en una tienda
+inventario = [
+    {"nombre": "Pan", "precio": 1500, "stock": 30},
+    {"nombre": "Leche", "precio": 3500, "stock": 15},
+    {"nombre": "Café", "precio": 8000, "stock": 10},
 ]
 
 ```
 
 
-## Ejercicio 4 - Reduce
+* Muestra el nombre del primer producto.
+* Agrega un nuevo producto al inventario.
+* Disminuye el stock de “Leche” en 2 unidades (venta).
+* Calcula el valor total del inventario (precio * stock por producto).
+* Muestra los productos cuyo stock sea menor a 10.
+* Aumenta el precio de todos los productos en un 10%.
+* Redondea los precios con round(p["precio"], 2) para evitar decimales largos.
+* Busca un producto por nombre (ingresado por el usuario) y muestra el producto encontrado, ten en cuenta que no puede estar.
+* Elimina un producto del inventario si su stock es 0.
+* Ordena la lista por precio ascendente.
 
-1. Realizar los siguientes ejercicios usando reduce.
+4. **Teniendo en cuenta el siguiente codigo**
 
 ```
-a. Dada una lista de numeros, calcula la multiplicación de estos.
-b. Dada una lista de palabras, concetenalas en una sola.
-c. Dada una lista, hallar el mayor de todos, define una función auxiliar que dado dos numeros retorne el mayor
+# Tupla: coordenadas (x, y)
+punto = (3, 7)
+print("Punto:", punto)
 ```
 
+* Crea una tupla rectangulo = (ancho, alto).
+* Calcula su área y perímetro.
+* Intenta cambiar el valor de ancho.
+  - ¿Qué error obtienes? ¿Por qué?
+
+```
+posiciones = [(0, 0), (1, 2), (3, 4)]
+```
+
+* Calcula la distancia total recorrida dadas las posiciones anteriores
+
+5. **Teniendo como base el siguiente codigo**
+
+```
+biblioteca = {
+    "libros": [
+        {"titulo": "1984", "autor": "George Orwell", "prestado": False},
+        {"titulo": "El Principito", "autor": "Antoine de Saint-Exupéry", "prestado": True},
+    ],
+    "usuarios": ["Ana", "Luis", "María"]
+}
+
+```
+
+* Muestra cuántos libros están prestados y cuántos disponibles.
+* Agrega un nuevo libro.
+* Marca como prestado el libro “1984”.
+* Muestra el estado actualizado del sistema (usa print(biblioteca)).
 
 ---
 
-## Ejercicio 4 - Sorted
 
-1. Realizar los siguientes ejercicios usando sorted.
+## Ejercicio 2 - Instrucciones simples y estructuradas
 
-```
-a. Ordenas una lista de palabras alfabeticamente.
-b. Ordenar una lista de tuplas por el primer elemento.
-c. Dada una lista de diccionarios, ordenar por precio (mayor a menor), y luego por nombre
-
-  productos = [
-      ("Camisa", 30),
-      ("Pantalón", 55),
-      ("Medias", 10),
-      ("Chaqueta", 80)
-  ]
-
-d. Dada una lista de palabras, ordenarlas según su longitud.
-e. Dada una lista de numeros, ordenarlos de tal forma que aparezcan primero los pares y luego los impares.
-f. Convertir una palabra a un diccinario que cuente la aparicion de cada letra, ordenar dicho diccionario según la frecuencia de aparicion.
-g. Dada una lista de tuplas, ordenar la primero por el departamento del empleado y luego por la edad.
-
-    empleados = [
-      ("Maria", "Ventas", 30),
-      ("Luis", "Tecnología", 25),
-      ("Ana", "Ventas", 25),
-      ("Pedro", "Tecnología", 28)
-    ]
+1. **Teniendo en cuenta el siguiente codigo**
 
 ```
+edad = int(input("Ingrese su edad: "))
+tiene_licencia = input("¿Tiene licencia? (s/n): ")
+```
+
+* Complementa el codigo para mediante condicionales determinar si el usuario puede conducir o no
+* Añade otro requisito (por ejemplo: “no estar sancionado”).
+
+
+2. **Teniendo en cuenta el siguiente codigo**
+
+```
+for i in range(1, 6):
+    print(f"Iteración número {i}")
+
+```
+
+* Calcula la suma de los primeros n números naturales.
+* Imprime solo los números pares usando if.
+* Agrega un acumulador y muestra el resultado final.
+* Usando el ejercicio anterior de las temperaturas, encuentra las temperaturas mayores al promedio
+
+
+3. **Teniendo en cuenta el siguiente codigo**
+
+```
+contador = 0
+while contador < 5:
+    print("Contador:", contador)
+    contador += 1
+```
+
+* Modifica el ciclo para contar hacia atrás.
+* Crea un programa que solicite números hasta que el usuario ingrese 0.
+* Explica qué parte del código representa el estado del ciclo.
 
 ---
 
-
-## Ejercicio 5
-
-1. Realizar los siguientes ejercicios usando sorted.
+4. **Teniendo en cuenta el siguiente codigo**
 
 ```
-a. Filtrar números pares y luego elevarlos al cuadrado.
-b. Dada una lista de numeros, elevar cada número al cubo, filtrar los mayores que 100, convertirlos a cadenas.
-c. Dada una lista de numeros, filtrar números mayores que 10, elevarlos al cuadrado, ordenarlos de mayor a menor.
+suma_pares = 0
+for i in range(1, 11):
+    if i % 2 == 0:
+        suma_pares += i
+
+print("Suma de los pares:", suma_pares)
 ```
+
+* Agrega otra variable para acumular los impares.
+* Representa el estado final como un diccionario (suma_pares y suma_impares)
+* Explica cómo el estado cambia dentro del bucle.
+
+5. **Teniendo en cuenta el siguiente codigo**
+
+```
+productos = []
+while True:
+    nombre = input("Ingrese producto (o 'fin' para salir): ")
+    if nombre == "fin":
+        break
+    precio = float(input("Precio: "))
+    cantidad = int(input("Cantidad: "))
+    productos.append({"nombre": nombre, "precio": precio, "cantidad": cantidad})
+
+# Mostrar total
+total = 0
+for p in productos:
+    total += p["precio"] * p["cantidad"]
+
+print("Total del inventario:", total)
+```
+
+* Usa continue para saltar productos con precio negativo o cantidad menor a 0.
+* Muestra el producto más caro usando max().
+* Representa el estado final del inventario como lista de diccionarios.
 
 ---
 
-## Ejercicio 6 - Minimax
+## Ejercicio 3 - Aplicación práctica (integración + API)
+
+1. **Teniendo en cuenta el siguiente codigo**
 
 ```
-Dado el juego conocido como NIM, implementar una solución a este usando el algoritmo minimax visto en clase
+import requests
 
-En este juego hay una pila de piedras (por ejemplo 10).
+# Llamado a una API pública
+url = "https://jsonplaceholder.typicode.com/users"
+response = requests.get(url)
+usuarios = response.json()
+# Procesamiento imperativo
+nombres = []
+for u in usuarios:
+    nombres.append(u["name"])
 
-En cada turno un jugador puede quitar 1, 2 o 3 piedras.
+print("Usuarios encontrados:")
+for n in nombres:
+    print("-", n)
 
-Pierde el jugador que no puede mover (porque ya no quedan piedras).
-
-MAX = Computadora
-
-MIN = Humano
-
-Dado lo anterior y el algoritmo visto en clase, modelar el juego y simularlo donde MAX sera la cpu y MIN el humado el cual interactua mediante el input, el primer turno sera el de MIN
 ```
 
+* Filtrar solo los usuarios cuyo correo termine en .biz.
+  - Mostrar el nombre de estos usuarios
+
+2. **Teniendo en cuenta el siguiente codigo**
+   
+```
+import requests
+
+# Entrada de datos
+nombre_pokemon = input("Ingrese el nombre de un Pokémon: ").lower()
+
+# Llamado a la API
+url = f"https://pokeapi.co/api/v2/pokemon/{nombre_pokemon}"
+respuesta = requests.get(url)
+
+# Verificación del estado de la respuesta
+if respuesta.status_code == 200:
+    datos = respuesta.json()
+
+    # Modelado del estado del Pokémon
+    pokemon = {
+        "nombre": datos["name"],
+        "altura": datos["height"],
+        "peso": datos["weight"],
+        "tipos": [t["type"]["name"] for t in datos["types"]],
+        "habilidades": [h["ability"]["name"] for h in datos["abilities"]]
+    }
+
+    # Salida del estado actual
+    print("\n📘 Información del Pokémon")
+    print(f"Nombre: {pokemon['nombre'].capitalize()}")
+    print(f"Altura: {pokemon['altura']}")
+    print(f"Peso: {pokemon['peso']}")
+    print(f"Tipos: {', '.join(pokemon['tipos'])}")
+    print(f"Habilidades: {', '.join(pokemon['habilidades'])}")
+
+else:
+    print("Pokémon no encontrado. Verifique el nombre ingresado.")
+
+```
+
+* Agregar condicionales adicionales (if / elif / else):
+  - Si el Pokémon tiene más de un tipo, mostrar "Pokémon de tipo mixto".
+  - Si el peso es mayor a 100, mostrar "Pokémon de gran tamaño".
+  - En caso contrario, "Pokémon ligero".
+
+* Usar for para listar las habilidades una por una
+* Añade algun otro uso que consideres interesante para la respuesta de la api
+  
 ---
-
 
 ## Retrospectiva
 1. ¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre)

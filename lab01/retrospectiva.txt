@@ -1,0 +1,31 @@
+Integrantes: Juan Sebastian Salazar, Kevin Daza, Juan David Cuellar
+
+
+¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre)
+
+Aproximadamente 3 horas en total, trabajamos de manera colaborativa en el mismo horario.
+
+
+¿Cuál es el estado actual del laboratorio? ¿Por qué?
+
+Completado y pusheado a master. Todos los ejercicios están resueltos y documentados.
+
+
+¿Cuál consideran fue el mayor logro? ¿Por qué?
+
+Completar exitosamente los ejercicios de API, lo cual fue interesante.
+
+
+¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+
+Problemas de API. Lo resolvimos implementando verificación de status_code y manejo de excepciones.
+
+
+¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados?
+
+Trabajamos de manera coordinada y dividimos las tareas según las fortalezas de cada uno. Nos comprometemos a comentar mejor el código.
+
+
+¿Qué referencias usaron? ¿Cuál fue la más útil? Incluyan citas con estándares adecuados.
+
+Documentación oficial de Python (https://docs.python.org/3/) y la documentación de la PokeAPI (https://pokeapi.co/docs/v2). La documentación de Python fue la más útil para recordar la sintaxis de estructuras de datos.
