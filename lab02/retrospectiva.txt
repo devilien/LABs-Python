@@ -1,27 +1,27 @@
-Integrantes: [Nombres de los integrantes]
+Integrantes: Juan Sebastian Salazar, Kevin Daza, Juan David Cuellar
 
 
 ¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre)
 
-Fue relativamente sencillo seguir ejercicio a ejercicio con algunas busquedas ... no tomamos en cuenta el tiempo.
+Fue relativamente sencillo seguir ejercicio a ejercicio, no tomamos en cuenta el tiempo.
 
 
 
 ¿Cuál es el estado actual del laboratorio? ¿Por qué?
 
-Completado, no del todo seguros de la heuristica ya que sentimos que es muy basica pero esta bien para el problema tambien.
+Completado y pusheado a master
 
 
 
 ¿Cuál consideran fue el mayor logro? ¿Por qué?
 
-Poder adecuarse mejor a haskell y su uso en general.
+Haberlo completado rapidamente
 
 
 
 ¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
 
-No hubo un mayor problema tecnico ahora mismo mas que tener que lidiar con el ide.
+No hubo un mayor problema tecnico
 
 
 
@@ -33,4 +33,4 @@ No estamos con certeza de esta respuesta.
 
 ¿Qué referencias usaron? ¿Cuál fue la más útil? Incluyan citas con estándares adecuados.
 
-Usamos algunas busquedas en internet para recordarnos el pattern matching pero fue el modo IA quien nos recordo.
+Usamos algunas busquedas en internet para recordarnos de sintaxis pero fue el modo IA quien nos ayudo.
