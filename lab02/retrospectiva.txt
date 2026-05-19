@@ -1,0 +1,36 @@
+Integrantes: [Nombres de los integrantes]
+
+
+¿Cuál fue el tiempo total invertido en el laboratorio por cada uno de ustedes? (Horas/Hombre)
+
+Fue relativamente sencillo seguir ejercicio a ejercicio con algunas busquedas ... no tomamos en cuenta el tiempo.
+
+
+
+¿Cuál es el estado actual del laboratorio? ¿Por qué?
+
+Completado, no del todo seguros de la heuristica ya que sentimos que es muy basica pero esta bien para el problema tambien.
+
+
+
+¿Cuál consideran fue el mayor logro? ¿Por qué?
+
+Poder adecuarse mejor a haskell y su uso en general.
+
+
+
+¿Cuál consideran que fue el mayor problema técnico? ¿Qué hicieron para resolverlo?
+
+No hubo un mayor problema tecnico ahora mismo mas que tener que lidiar con el ide.
+
+
+
+¿Qué hicieron bien como equipo? ¿Qué se comprometen a hacer para mejorar los resultados?
+
+No estamos con certeza de esta respuesta.
+
+
+
+¿Qué referencias usaron? ¿Cuál fue la más útil? Incluyan citas con estándares adecuados.
+
+Usamos algunas busquedas en internet para recordarnos el pattern matching pero fue el modo IA quien nos recordo.
